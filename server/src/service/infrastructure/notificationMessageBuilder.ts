@@ -283,7 +283,7 @@ export class NotificationMessageBuilder implements INotificationMessageBuilder {
 		clientHost: string
 	): NotificationMessage {
 		const type: NotificationType = "monitor_down"; // Escalation is still about monitor being down
-		const severity: NotificationSeverity = "error";
+		const severity: NotificationSeverity = "critical";
 		const content = this.buildEscalationContent(monitor, incidentId, clientHost);
 
 		return {
