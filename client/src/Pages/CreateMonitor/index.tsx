@@ -783,7 +783,9 @@ const CreateMonitorPage = () => {
 									}}
 									type="number"
 									fieldLabel={t("pages.createMonitor.form.escalation.option.delay.label")}
-									placeholder={t("pages.createMonitor.form.escalation.option.delay.placeholder")}
+									placeholder={t(
+										"pages.createMonitor.form.escalation.option.delay.placeholder"
+									)}
 									fullWidth
 									error={!!fieldState.error}
 									helperText={fieldState.error?.message ?? ""}
@@ -813,7 +815,9 @@ const CreateMonitorPage = () => {
 												field.onChange(newValue.map((n) => n.id));
 											}}
 											isOptionEqualToValue={(option, value) => option.id === value.id}
-											fieldLabel={t("pages.createMonitor.form.escalation.option.notifications.label")}
+											fieldLabel={t(
+												"pages.createMonitor.form.escalation.option.notifications.label"
+											)}
 										/>
 										{selectedNotifications.length > 0 && (
 											<Stack
